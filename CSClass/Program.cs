@@ -13,7 +13,6 @@ namespace CSClass
             Car car = new Car();
             car.SetInTime();
             car.SetOutTime();
-            car.set
 
             Random random = new Random();
             Console.WriteLine(random.Next(10, 100));
@@ -51,6 +50,10 @@ namespace CSClass
             Console.WriteLine(Math.Round(52.273));
             Console.WriteLine(Math.PI);
 
+            Hamburger nyam = new Hamburger();
+
         }
+
+
     }
 }
