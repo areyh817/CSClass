@@ -109,6 +109,9 @@ namespace CSClass
             }
 
 
+            Method method = new Method();
+            Console.WriteLine(method.Multi(52.1, 273));
+
         }
 
 
