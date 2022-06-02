@@ -115,7 +115,22 @@ namespace CSClass
             Console.WriteLine(method.Multiply(1, 10));
             Console.WriteLine(Method.Abs(-100));
             Console.WriteLine(Method.Abs(100));
-           // Console.WriteLine(method.Abs(100)); java는 가능 c#은 불가
+            // Console.WriteLine(method.Abs(100)); java는 가능 c#은 불가
+
+
+            // Method Overloading
+            // int
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-52));
+
+            // double
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(-52.273));
+
+            // long
+            Console.WriteLine(MyMath.Abs(2223456789));
+            Console.WriteLine(MyMath.Abs(-2223456789));
+
 
         }
 
