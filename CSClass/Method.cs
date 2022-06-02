@@ -4,6 +4,9 @@ namespace CSClass
 {
     class Method
     {
+        int instanceVariable = 10;
+        static int classVariable = 10;
+
         public double Multi(double v1, int v2)
         {
             return v1 * v2;
@@ -18,7 +21,7 @@ namespace CSClass
         public int Sum(int min, int max)
         {
             int output = 0;
-            for(int i = min; i <= max; i++)
+            for (int i = min; i <= max; i++)
             {
                 output += i;
             }
@@ -42,6 +45,26 @@ namespace CSClass
             }
 
             return output;
+        }
+
+
+        static public void some()
+        {
+            // Multiply(1, 10);
+            // Console.WriteLine(this.instanceVariable);
+            Console.WriteLine(classVariable);
+        }
+
+        public static int Abs(int input)
+        {
+            if(input < 0)
+            {
+                return -input;
+            }
+            else
+            {
+                return input;
+            }
         }
     }
 }
