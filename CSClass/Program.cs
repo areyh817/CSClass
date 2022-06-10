@@ -170,6 +170,25 @@ namespace CSClass
             Console.WriteLine(Fibonacci.Get(100));
             Console.WriteLine(Fibonacci.Get(1000));
 
+
+
+            List<Dog> dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
+            List<Cat> cats = new List<Cat>() { new Cat(), new Cat(), new Cat() };
+
+            foreach(var item in dogs)
+            {
+                item.Eat();
+                item.Sleep();
+                item.Bark();
+            }
+            foreach (var item in cats)
+            {
+                item.Eat();
+                item.Sleep();
+                item.Meow();
+            }
+
+
         }
 
 
