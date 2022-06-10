@@ -2,10 +2,15 @@
 
 namespace CSClass
 {
-    public class Dog:Animal
+    public class Animal
     {
-        public string Color { get; set; }
 
+        public int Age { get; set; }
+
+        public Animal()
+        {
+            this.Age = 0;
+        }
 
         public void Eat()
         {
@@ -17,9 +22,5 @@ namespace CSClass
             Console.WriteLine("쿨쿨 잠을 잡니다.");
         }
 
-        public void Bark()
-        {
-            Console.WriteLine("왈왈 짖습니다.");
-        }
     }
 }
