@@ -184,6 +184,14 @@ namespace CSClass
             {
                 item.Eat();
                 item.Sleep();
+                if(item is Dog)
+                {
+                    ((Dog)item).Bark();
+                } else if(item is Cat)
+                {
+                    Cat cat = (Cat)item;
+                    cat.Meow();
+                }
             }
             /*foreach (var item in cats)
             {
