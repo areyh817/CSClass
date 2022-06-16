@@ -8,6 +8,9 @@ namespace CSClass
 {
     internal class Program
     {
+        public static int number = 10;
+        public int variable = 273;
+
         static void Main(string[] args)
         {
             Car car = new Car();
@@ -172,9 +175,27 @@ namespace CSClass
 
 
 
+            Child childA = new Child();
+            Child childB = new Child("string");
+
+            Parent parent = new Parent();
+            Child child = new Child();
+
+            // 새도잉
+            int number = 20;
+            Console.WriteLine(number);
+
+            // 하이딩
+            Child c = new Child();
+            Console.WriteLine(c.variable);
+            Console.WriteLine(((Parent)c).variable);
+            c.Method();
+           ((Parent)c).Method();
+
+
             /*List<Dog> dogs = new List<Dog>() {  };
             List<Cat> cats = new List<Cat>() {  };*/
-            List<Animal> animals = new List<Animal>()
+            /*List<Animal> animals = new List<Animal>()
             {
                 new Dog(), new Dog(), new Dog(),
                 new Cat(), new Cat(), new Cat()
@@ -214,22 +235,18 @@ namespace CSClass
                     Cat cat = (Cat)item;
                     cat.Meow();
                 }*/
-            }
-            /*foreach (var item in cats)
-            {
-                item.Eat();
-                item.Sleep();
-                item.Meow();
-            }*/
-
-
         }
+        /*foreach (var item in cats)
+        {
+            item.Eat();
+            item.Sleep();
+            item.Meow();
+        }*/
+        /*;*/
 
-
-        Child childA = new Child();
-        Child childB = new Child("string");
-
-        Parent parent = new Parent();
-        Child child = new Child();
     }
-}
+
+
+
+    }
+
