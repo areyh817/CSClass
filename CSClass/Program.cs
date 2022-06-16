@@ -209,11 +209,11 @@ namespace CSClass
                 {
                     ((Dog)item).Bark();
                 }
-                else if (item is Cat)
+                /*else if (item is Cat)
                 {
                     Cat cat = (Cat)item;
                     cat.Meow();
-                }
+                }*/
             }
             /*foreach (var item in cats)
             {
@@ -226,5 +226,10 @@ namespace CSClass
         }
 
 
+        Child childA = new Child();
+        Child childB = new Child("string");
+
+        Parent parent = new Parent();
+        Child child = new Child();
     }
 }
